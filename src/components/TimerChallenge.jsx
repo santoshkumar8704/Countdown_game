@@ -28,7 +28,6 @@ export default function TimerChallenge({ title, timeLimit }) {
     <ResultModal ref={dialog} timeLimit={timeLimit} remainingTime = {timeRemaining} onReset = {handleReset}/>
     <section className="challenge">
       <h2>{title}</h2>
-      {isTimerActive ? "youLost" : ""}
       <p className="challengetime">
         {timeLimit} second{timeLimit > 1 ? "s" : ""}
       </p>
